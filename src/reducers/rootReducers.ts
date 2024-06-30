@@ -11,4 +11,6 @@ const rootReducers = (state: any, action: any) => {
   return appReducers(state, action);
 };
 
+export type RootState = ReturnType<typeof appReducers>;
+
 export default rootReducers;
