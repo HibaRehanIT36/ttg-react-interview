@@ -3,7 +3,8 @@ import { createTheme } from '@material-ui/core/styles'
 
 import { grey } from '@material-ui/core/colors';
 
-const primary = '#ea26c2';
+const primary = '#09a2c5';
+const secondary = '#f59230';
 
 const theme = createTheme({
   typography: {
@@ -15,7 +16,9 @@ const theme = createTheme({
       main: primary,
     },
     secondary: {
-      main: '#1bafd5',
+      main: secondary,
+      light :'#a7a6af',
+      dark:'#292733'
     },
     error: {
       light: '#ef5350',
@@ -45,8 +48,13 @@ const theme = createTheme({
       disabled: 'rgba(0, 0, 0, 0.20)',
       disabledBackground: 'rgba(0, 0, 0, 0.12)',
     },
+    background: {
+      default : '#f2f3f9',
+      paper:'#fff',
+    },
     text: {
       primary: grey[50],
+      secondary: '#111',
     },
   },
   overrides: {
